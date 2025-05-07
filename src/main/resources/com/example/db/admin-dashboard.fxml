@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="297.0" prefWidth="622.0" stylesheets="@cinema_style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.db.AdminDashboardController">
+    <top>
+        <!-- Header Section -->
+        <HBox alignment="CENTER_LEFT" spacing="20" style="-fx-background-color: #2c3e50; -fx-padding: 10px;">
+            <children>
+                <ImageView fitHeight="50" fitWidth="50" preserveRatio="true">
+                    <image>
+                        <Image url="@admin_logo.png" />
+                    </image>
+                </ImageView>
+                <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: white;" text="Admin Dashboard" />
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <!-- Main Content -->
+        <GridPane alignment="CENTER" hgap="20" style="-fx-padding: 20px;" vgap="20">
+            <children>
+                <Button fx:id="manageMoviesButton" prefWidth="200" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 16px;" text="Manage Movies" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Button fx:id="manageUsersButton" prefWidth="200" style="-fx-background-color: #760cfd; -fx-text-fill: white; -fx-font-size: 16px;" text="Manage Users" GridPane.columnIndex="1" />
+                <Button fx:id="viewReportsButton" prefWidth="200" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 16px;" text="View Reports" GridPane.rowIndex="1" />
+            <Button fx:id="logoutButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="199.0" style="-fx-alignment: center; -fx-background-color: orange; -fx-font-weight: bold;" text="Log Out" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </center>
+    <bottom>
+        <!-- Footer Section -->
+        <Label style="-fx-font-size: 12px; -fx-text-fill: #95a5a6;" text="© 2024 Cinema Management System - Admin Panel" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>

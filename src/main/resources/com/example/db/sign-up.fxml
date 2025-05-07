@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane stylesheets="@cinema_style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.db.SignUpController" >
+    <center>
+        <VBox fx:id="mainContainer" alignment="CENTER" prefWidth="450" spacing="20" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Animated Title -->
+                <Label fx:id="titleLabel" styleClass="title-label" text="Create an Account" />
+
+                <!-- Sign-Up Form -->
+                <VBox alignment="CENTER" spacing="15">
+                    <children>
+                        <!-- Name Field -->
+                        <TextField fx:id="nameField" maxWidth="-Infinity" prefHeight="42.0" prefWidth="275.0" promptText="Name" styleClass="input-field" />
+
+                        <!-- Contact Number Field -->
+                        <TextField fx:id="contactNumberField" maxWidth="-Infinity" prefHeight="42.0" prefWidth="281.0" promptText="Contact Number" styleClass="input-field" />
+
+                        <!-- Email Field -->
+                        <TextField fx:id="emailField" maxWidth="-Infinity" prefHeight="42.0" prefWidth="284.0" promptText="Email" styleClass="input-field" />
+
+                        <!-- Password Field -->
+                        <PasswordField fx:id="passwordField" maxWidth="-Infinity" prefHeight="42.0" prefWidth="282.0" promptText="Password" styleClass="input-field" />
+
+                        <!-- Confirm Password Field -->
+                        <PasswordField fx:id="confirmPasswordField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="42.0" prefWidth="279.0" promptText="Confirm Password" styleClass="input-field" />
+                    </children>
+                </VBox>
+
+                <!-- Buttons -->
+                <HBox alignment="CENTER" spacing="15">
+                    <children>
+                        <!-- Sign-Up Button -->
+                        <Button fx:id="signupButton" styleClass="primary-button" text="Sign Up" />
+
+                        <!-- Cancel Button -->
+                        <Button fx:id="cancelButton" styleClass="secondary-button" text="Cancel" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

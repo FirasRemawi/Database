@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/javafx" fx:controller="com.example.db.CinemaDatabaseController" stylesheets="@cinema_style.css">
+    <center>
+        <VBox alignment="CENTER" spacing="20" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Logo -->
+                <ImageView fitWidth="100" fitHeight="100" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@cinema_logo.png"/>
+                    </image>
+                </ImageView>
+
+                <!-- Title -->
+                <Label text="Cinema Login" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #444;" />
+
+                <!-- Login Form -->
+                <GridPane hgap="10" vgap="15" alignment="CENTER">
+                    <children>
+                        <Label text="Email:" style="-fx-font-size: 16px;" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="usernameField" promptText="Enter your email" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+                        <Label text="Password:" style="-fx-font-size: 16px;" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <PasswordField fx:id="passwordField" promptText="Enter your password" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+                        <Label fx:id="errorLabel" text="Invalid credentials!" style="-fx-text-fill: red; -fx-font-size: 14px;" visible="false" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+                    </children>
+                </GridPane>
+
+                <!-- Buttons -->
+                <HBox alignment="CENTER" spacing="15">
+                    <children>
+                        <Button fx:id="loginButton" text="Login" prefWidth="100" style="-fx-background-color: #5cb85c; -fx-text-fill: white;"/>
+                        <Button fx:id="signupButton" text="Sign Up" prefWidth="100" style="-fx-background-color: #0275d8; -fx-text-fill: white;"/>
+                    </children>
+                </HBox>
+
+                <!-- Footer -->
+                <Label text="© 2024 Cinema Management System" style="-fx-font-size: 12px; -fx-text-fill: #888;" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,143 @@
+/* Global Styling */
+/* Global Styling */
+.root {
+    -fx-background-image: url("background.png");
+     -fx-font-family: 'Roboto', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #2196F3, #1976D2);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #0D47A1;
+    -fx-border-width: 1;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.2, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #1976D2, #0D47A1);
+}
+
+.button:pressed {
+    -fx-background-color: #0D47A1;
+}
+
+/* TextFields */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #9E9E9E;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5 10;
+}
+
+.text-field:focused {
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2;
+}
+
+/* Labels */
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #424242;
+}
+
+/* CheckBoxes */
+.check-box {
+    -fx-mark-color: #2196F3;
+}
+
+/* RadioButtons */
+.radio-button {
+    -fx-mark-color: #2196F3;
+}
+
+/* ComboBoxes */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #9E9E9E;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.combo-box:focused {
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2;
+}
+
+/* ProgressBar */
+.progress-bar {
+    -fx-accent: #2196F3;
+}
+
+/* Dialogs */
+.dialog-pane {
+    -fx-background-color: white;
+    -fx-border-color: #9E9E9E;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.dialog-pane .header {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-font-weight: bold;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #9E9E9E;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.list-view .cell {
+    -fx-padding: 10;
+    -fx-border-color: #9E9E9E;
+}
+
+.list-view .cell:hover {
+    -fx-background-color: #E3F2FD;
+}
+
+/* Tabs */
+.tab-pane {
+    -fx-background-color: white;
+}
+
+.tab-header-background {
+    -fx-background-color: #2196F3;
+}
+
+.tab-label {
+    -fx-text-fill: white;
+}
+
+/* Tooltips */
+.tooltip {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 5;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* Sliders */
+.slider .thumb {
+    -fx-background-color: #2196F3;
+    -fx-background-radius: 50%;
+}
+
+.slider .track {
+    -fx-background-color: #B0BEC5;
+}

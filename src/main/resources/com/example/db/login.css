@@ -1,0 +1,51 @@
+/* Center container styling */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #dcdcdc);
+}
+
+/* Input fields */
+.text-field, .password-field {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+}
+
+/* Buttons */
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+#loginButton {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+}
+
+#signupButton {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+.button:pressed {
+    -fx-background-color: #1e7e34;
+}
+
+/* Error Label */
+#errorLabel {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+    -fx-opacity: 0.8;
+}
+
+/* Footer */
+.footer-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #666;
+}

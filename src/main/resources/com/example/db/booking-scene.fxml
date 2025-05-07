@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-padding: 10;" stylesheets="@cinema_style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.db.BookingController">
+    <BorderPane>
+        <top>
+            <VBox spacing="10" style="-fx-padding: 10; -fx-background-color: #f4f4f4;" styleClass="button" stylesheets="@cinema_style.css" BorderPane.alignment="CENTER">
+                <Label fx:id="movieTitleLabel" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Movie Title" />
+                <Label fx:id="movieGenreLabel" text="Genre: " />
+                <Label fx:id="movieDurationLabel" text="Duration: " />
+                <ImageView fx:id="moviePoster" fitHeight="300" fitWidth="200" />
+            </VBox>
+        </top>
+        <center>
+            <GridPane fx:id="seatGrid" hgap="10" style="-fx-padding: 20;" vgap="10" />
+        </center>
+        <left>
+            <VBox fx:id="foodMenuPanel" spacing="10" style="-fx-padding: 10; -fx-border-color: lightgray; -fx-border-width: 1; -fx-background-color: #ffffff;">
+                <Label style="-fx-font-weight: bold;" text="Food &amp; Beverage Menu" />
+            </VBox>
+        </left>
+        <right>
+            <VBox fx:id="cartPanel" spacing="10" style="-fx-padding: 10; -fx-border-color: lightgray; -fx-border-width: 1; -fx-background-color: #ffffff;">
+                <Label style="-fx-font-weight: bold;" text="Your Cart" />
+            </VBox>
+        </right>
+        <bottom>
+            <VBox spacing="10" style="-fx-padding: 10; -fx-background-color: #f4f4f4;" BorderPane.alignment="CENTER">
+                <TextArea fx:id="movieDescriptionArea" editable="false" style="-fx-pref-height: 100; -fx-font-size: 14px;" />
+
+                <HBox spacing="20" BorderPane.alignment="CENTER">
+                    <Label fx:id="countdownTimerLabel" style="-fx-font-size: 16px;" text="Time Remaining: 05:00" />
+                    <Button fx:id="confirmBookingButton" style="-fx-background-color: 1976D2FF; -fx-text-fill: white;" text="Confirm Booking" />
+               <Button fx:id="back" mnemonicParsing="false" text="Back" />
+                </HBox>
+            </VBox>
+        </bottom>
+    </BorderPane>
+</ScrollPane>

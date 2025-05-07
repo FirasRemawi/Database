@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane stylesheets="@cinema_style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.db.UserDashboardController">
+    <top>
+        <HBox alignment="CENTER" spacing="10" style="-fx-background-color: #3498db; -fx-padding: 10px;">
+            <children>
+                <Label style="-fx-text-fill: white; -fx-font-size: 18;" text="Movies Dashboard" />
+                <ChoiceBox fx:id="genreFilter" />
+            <Button fx:id="back" mnemonicParsing="false" text="Back" />
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true" style="-fx-padding: 10;">
+            <content>
+                <FlowPane fx:id="movieContainer" hgap="20" style="-fx-padding: 20;" vgap="20" />
+            </content>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <Label style="-fx-text-fill: #7f8c8d; -fx-alignment: CENTER;" text="© 2024 Cinema Management System" />
+    </bottom>
+</BorderPane>
